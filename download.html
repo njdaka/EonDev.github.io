@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download EonDev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+  <body>
+    <!-- Enhanced Navigation with glass morphism -->
+    <header id="navbar" aria-label="Main navigation">
+      <div class="container nav-content">
+        <div class="logo-wrapper">
+          <h1 class="logo">
+            <img src="assets/logo.png" alt="EonDev Logo" class="header-logo" />
+            EonDev
+          </h1>
+        </div>
+        
+        <nav role="navigation" aria-label="Primary">
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#offer">Features</a></li>
+            <li><a href="index.html#impact">Why EonDev</a></li>
+            <li><a href="index.html#how">Shortcuts</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#footer" class="nav-cta">Get Started</a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Download Section -->
+    <section id="download" class="fade-in">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Download</span>
+          <h2>EonDev for Windows</h2>
+          <p class="section-description">
+            Choose your preferred installer.
+          </p>
+        </div>
+
+        <div class="download-buttons fade-up">
+          <a href="assets/EonDev_0.1.0_x64-setup.exe" class="btn btn-primary">Download .exe</a>
+          <a href="assets/EonDev_0.1.0_x64_en-US.msi" class="btn btn-secondary">Download .msi</a>
+        </div>
+
+        <div class="verification-section fade-up">
+          <h3>Verify Your Download</h3>
+          <p>Ensure the integrity and authenticity of your download by verifying the file's hash and the certificate's fingerprint.</p>
+          
+          <h4>SHA256 Hashes</h4>
+          <pre class="checksum">
+EonDev Setup EXE:
+6be72027a9ca6d18160fc0b3a215423a98afea6a2a7a50b2f9c0b8387f66296b
+
+EonDev MSI:
+0be0aaed15e29726476c180186b69abbee2fc3814276363298e93e2124c139d8
+          </pre>
+
+          <h4>Certificate Fingerprint</h4>
+          <pre class="checksum">
+sha256 Fingerprint=11:67:D6:A6:88:32:D2:D4:30:81:95:56:49:03:17:CB:92:70:59:22:59:C1:35:65:3F:72:4A:6D:2B:31:67:2B
+          </pre>
+
+          <h4>How to Verify</h4>
+          <div class="instructions">
+            <h5>Using PowerShell:</h5>
+            <ol>
+              <li>Open PowerShell.</li>
+              <li>Navigate to the directory where you downloaded the installer.</li>
+              <li>Run the following command to get the hash of the file:<br>
+                <code>Get-FileHash -Algorithm SHA256 EonDev_0.1.0_x64_en-US.msi</code></li>
+              <li>Compare the generated hash with the one provided above.</li>
+            </ol>
+            <h5>Verifying the Certificate:</h5>
+            <ol>
+              <li>Right-click on the installer file and select "Properties".</li>
+              <li>Go to the "Digital Signatures" tab.</li>
+              <li>Select the signature from the list and click "Details".</li>
+              <li>In the "Details" window, view the certificate.</li>
+              <li>Under the "Details" tab of the certificate, look for the "Thumbprint" field and compare it to the fingerprint above.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
